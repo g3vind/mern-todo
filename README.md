@@ -24,13 +24,13 @@ This is a simple To-Do application built using the ViteJS for the frontend and t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/vite-mern-stack-todo-app.git
+   git clone https://github.com/your-username/mern-todo.git
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd vite-mern-stack-todo-app
+   cd mern-todo
    ```
 
 3. Install dependencies for the server:
