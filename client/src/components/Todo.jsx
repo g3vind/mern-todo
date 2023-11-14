@@ -1,11 +1,12 @@
-import axios from "axios";
 import React from "react";
+import axios from "axios"; // Add this import
 import { AiFillEdit } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 import { baseURL } from "../utils/constant";
 
-const ToDo = ({ text, id, setUpdateUI, setShowPopup, setPopupContent }) => {
-  const deleteTodo = () => {
+export default function ToDo({ text, id, setUpdateUI, setShowPopup }) {
+  // DELETE TODO
+  const deleteToDo = () => {
     axios.delete(`${baseURL}/delete/${id}`).then((res) => {
       console.log(res.data);
       setUpdateUI((prevState) => !prevState);
@@ -13,7 +14,6 @@ const ToDo = ({ text, id, setUpdateUI, setShowPopup, setPopupContent }) => {
   };
 
   const updateToDo = () => {
-    setPopupContent({ text, id });
     setShowPopup(true);
   };
 
@@ -22,10 +22,8 @@ const ToDo = ({ text, id, setUpdateUI, setShowPopup, setPopupContent }) => {
       {text}
       <div className="icons">
         <AiFillEdit className="icon" onClick={updateToDo} />
-        <RxCross1 className="icon" onClick={deleteTodo} />
+        <RxCross1 className="icon" onClick={deleteToDo} />
       </div>
     </div>
   );
-};
-
-export default ToDo;
+}
