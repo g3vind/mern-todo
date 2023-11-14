@@ -4,7 +4,13 @@ import { AiFillEdit } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 import { baseURL } from "../utils/constant";
 
-export default function ToDo({ text, id, setUpdateUI, setShowPopup }) {
+export default function ToDo({
+  text,
+  id,
+  setUpdateUI,
+  setShowPopup,
+  setPopupContent,
+}) {
   // DELETE TODO
   const deleteToDo = () => {
     axios.delete(`${baseURL}/delete/${id}`).then((res) => {
@@ -14,6 +20,7 @@ export default function ToDo({ text, id, setUpdateUI, setShowPopup }) {
   };
 
   const updateToDo = () => {
+    setPopupContent({ text, id });
     setShowPopup(true);
   };
 

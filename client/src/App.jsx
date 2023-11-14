@@ -9,6 +9,7 @@ function App() {
   const [input, setInput] = useState("");
   const [updateUI, setUpdateUI] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [popupContent, setPopupContent] = useState({});
   // USE EFFECT HOOK
   useEffect(() => {
     axios
@@ -58,11 +59,18 @@ function App() {
               text={el.toDo}
               setUpdateUI={setUpdateUI}
               setShowPopup={setShowPopup}
+              setPopupContent={setPopupContent}
             />
           ))}
         </div>
       </div>
-      {showPopup && <Popup />}
+      {showPopup && (
+        <Popup
+          setShowPopup={setShowPopup}
+          popupContent={popupContent}
+          setUpdateUI={setUpdateUI}
+        />
+      )}
     </main>
   );
 }
