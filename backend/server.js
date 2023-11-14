@@ -7,7 +7,13 @@ const PORT = process.env.PORT || 5000;
 const routes = require("./routes/ToDoRoutes");
 
 // MIDDLEWARE
-app.use(cors());
+app.use(
+  cors({
+    orgin: ["https://mern-todo-brown.vercel.app/"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // MONGOOSE
