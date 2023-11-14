@@ -9,7 +9,7 @@ const routes = require("./routes/ToDoRoutes");
 // MIDDLEWARE
 app.use(
   cors({
-    orgin: ["https://mern-todo-brown.vercel.app/"],
+    orgin: ["https://mern-todo-6jfw.vercel.app/"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
