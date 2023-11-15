@@ -1,6 +1,6 @@
-# MERN Stack To-Do App
+# MERN To-Do App
 
-This is a simple To-Do application built using the ViteJS for the frontend and the MERN stack (MongoDB, Express, and Node.js) for the backend. The application allows users to manage tasks, leveraging Axios for seamless communication between the React frontend and Express backend.
+This is a simple To-Do application built using the ReactJS for the frontend and the MERN stack (MongoDB, Express, and Node.js) for the backend. The application allows users to manage tasks, leveraging Axios for seamless communication between the React frontend and Express backend.
 
 ## Features
 
