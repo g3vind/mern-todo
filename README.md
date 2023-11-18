@@ -23,6 +23,12 @@ This is a simple To-Do application built using the ReactJS for the frontend and 
 
 ## Getting Started
 
+## Client 
+npm run dev - will run on localhost:5173
+
+## Backend
+npm run start 
+
 1. Clone the repository:
 
    ```bash
@@ -38,7 +44,7 @@ This is a simple To-Do application built using the ReactJS for the frontend and 
 3. Install dependencies for the server:
 
    ```bash
-   cd server
+   cd backend
    npm install
    ```
 
@@ -52,7 +58,7 @@ This is a simple To-Do application built using the ReactJS for the frontend and 
 5. Start the server:
 
    ```bash
-   cd ../server
+   cd ../backend
    npm start
    ```
 
@@ -63,16 +69,7 @@ This is a simple To-Do application built using the ReactJS for the frontend and 
    npm run dev
    ```
 
-The application will be running at `http://localhost:3000`.
-
-## Live Demo
-
-Check out the live demo of the application [here](#insert-live-demo-link).
-
 ## Contributing
 
 Contributions are welcome! Please create a pull request with your changes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
