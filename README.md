@@ -2,6 +2,8 @@
 
 This is a simple To-Do application built using the ReactJS for the frontend and the MERN stack (MongoDB, Express, and Node.js) for the backend. The application allows users to manage tasks, leveraging Axios for seamless communication between the React frontend and Express backend.
 
+![Screenshot (658)](https://github.com/g3vind/mern-todo/assets/70854788/efcdf9a2-819e-484d-a9d8-c742f7f82616)
+
 ## Features
 
 - **Create Task:** Easily add new tasks to the to-do list.
