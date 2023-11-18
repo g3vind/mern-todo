@@ -29,6 +29,7 @@ npm run dev - will run on localhost:5173
 ## Backend
 npm run start 
 
+## Cloning Repository
 1. Clone the repository:
 
    ```bash
